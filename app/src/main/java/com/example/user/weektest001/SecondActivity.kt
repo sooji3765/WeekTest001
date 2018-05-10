@@ -23,10 +23,9 @@ class SecondActivity : AppCompatActivity() {
 
 
         var text_id : TextView = findViewById(R.id.id)
-        var text_pass : TextView = findViewById(R.id.pass)
+        var text_id_value : TextView = findViewById(R.id.id_value)
 
-        text_id.setText(id)
-        text_pass.setText(pass)
+        text_id_value.setText(id)
     }
 
 }

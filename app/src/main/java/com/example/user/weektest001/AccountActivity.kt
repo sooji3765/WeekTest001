@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import org.jetbrains.annotations.NotNull
 
 class AccountActivity : Activity() {
 
@@ -29,7 +30,18 @@ class AccountActivity : Activity() {
             val pass1 = regi_pass1.text.toString()
             val pass2 = regi_pass2.text.toString()
 
-            if((pass1==pass2)&&(email.contains('@')==true)){
+            var joinData : Array<String> = arrayOf(id,email,pass1,pass2)
+
+            fun checkNull(): Boolean {
+                for (array in joinData){
+                    if(array.isEmpty())
+                        return true
+                }
+                return false
+            }
+
+
+            if((pass1==pass2)&&(email.contains('@')==true)&&checkNull()==false){
                edit.putString("id",id)
                edit.putString("email",email)
                edit.putString("pass",pass1)
@@ -50,7 +62,7 @@ class AccountActivity : Activity() {
 
         }
 
-
-
     }
+
+
 }

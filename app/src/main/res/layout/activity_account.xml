@@ -21,8 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Id" />
+            android:hint="Id"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/regi_email"
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="re_password"
+            android:hint="Password"
             android:inputType="textPassword" />
 
         <Button

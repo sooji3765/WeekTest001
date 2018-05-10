@@ -7,26 +7,27 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.user.weektest001.SecondActivity"
     tools:showIn="@layout/activity_second">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/id"
-        android:layout_width="199dp"
-        android:layout_height="49dp"
-        android:text="아이디"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="130dp" />
 
-    <TextView
-        android:id="@+id/pass"
-        android:layout_width="197dp"
-        android:layout_height="62dp"
-        android:text="비밀번호"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="193dp" />
+    <LinearLayout
+        android:layout_width="305dp"
+        android:layout_height="173dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="119dp">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="아이디"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="130dp" />
+
+        <TextView
+            android:id="@+id/id_value"
+            android:layout_width="match_parent"
+            android:layout_height="39dp" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

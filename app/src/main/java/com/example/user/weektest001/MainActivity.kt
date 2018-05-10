@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent1)
                 onRestart()
 
-
             }else{
                 text_id.setText("")
                 text_pass.setText("")
